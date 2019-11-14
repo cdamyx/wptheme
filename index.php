@@ -1,10 +1,13 @@
 <?php
-	function myFunc($name, $color) {
-		echo "<p>Hello my name is $name and my favorite color is $color</p>";
+	
+	$names = array('Chris', 'Jack', 'anotherGuy', 'Jeff');
+
+	$count = 0;
+
+	while($count < count($names)) {
+		echo "<li>Hi, my name is $names[$count]</li>";
+		$count++;
 	}
 
-	myFunc('Jack', 'Black');
 ?>
 
-<h1><?php bloginfo('name'); ?></h1>
-<p><?php bloginfo('description'); ?></p>
