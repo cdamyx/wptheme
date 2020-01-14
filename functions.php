@@ -8,5 +8,8 @@ function software_dev_files() {
 }
 
 add_action('wp_enqueue_scripts', 'software_dev_files');
-
+function software_dev_features() {
+	add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'software_dev_features');
 ?>
